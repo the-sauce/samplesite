@@ -1,5 +1,5 @@
 #Create Portainer container (visit @ [host]:1123)
-set -o allexport; source .env; set +o allexport
+source ./modules/load.sh
 echo Attempting to create portainer_data volume...
 docker volume create portainer_data
 echo Attempting to run portainer container...
