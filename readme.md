@@ -28,6 +28,11 @@ These instructions will explain the setup of this template as a starting point f
         ```
 1.   Visit the URL http://samplesite:8080/ in your browser. A '_hello world_' response confirms
      that the three parts of this docker configuration (nginx-server, php-server, mysql-server) are working.
+## Additional Remarks
+### Docker Reset
+If you change certain settings it may be necessary to rebuild a container.
+To force this, just delete it using  
+`docker rm [container name]`.
 ## License
 This project is licensed under the MIT License - see the LICENSE.txt file for details.
 ## Acknowledgments
