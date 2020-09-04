@@ -1,0 +1,3 @@
+.css::after {
+    content: "hello world";
+}
