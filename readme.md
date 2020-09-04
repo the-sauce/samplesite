@@ -13,12 +13,14 @@ These instructions will explain the setup of this template as a starting point f
         PROJECT_SHORTNAME=myprojectshortname
         MYSQL_ROOT_PASSWORD=mypassword
         HOST_DEVICE=mydevice
+        DATABASE_PORT=myport
         ```  
      "_myprojectshortname_" should be a locally unique name for your project.
      It will be used as a prefix for your docker container names to prevent name collisions when this template is used
      in several of your projects.
      "_mypassword_" can be replaced with a password of your choosing,  
      "_mydevice_" must either be "_localhost_" on Windows or the _hostname of your machine_ in Linux.
+     "_myport_" is the port number for your project database
 1.   add "___samplesite___" as __127.0.0.1__ to the _hosts file_ of your machine
 1.   run the following command in your installation directory
         ```
