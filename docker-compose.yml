@@ -6,7 +6,7 @@ services:
     container_name: ${PROJECT_SHORTNAME}_nginx
     volumes:
       - ./webroot:/webroot
-      - ./docker-config/nginx/site.conf:/etc/nginx/conf.d/site.conf
+      - ./docker/nginx/site.conf:/etc/nginx/conf.d/site.conf
     networks:
       - webnet
     ports:
@@ -14,7 +14,7 @@ services:
 
   php:
     build:
-      context: ./docker-config/php
+      context: docker/php
       dockerfile: Dockerfile
     container_name: ${PROJECT_SHORTNAME}_php
     volumes:
@@ -29,7 +29,7 @@ services:
     image: mysql:8.0.17
     container_name: ${PROJECT_SHORTNAME}_mysql
     volumes: #TODO: mount volume for container database persistence
-      - ./docker-config/mysql/setup.sql:/docker-entrypoint-initdb.d/setup.sql
+      - ./docker/mysql/setup.sql:/docker-entrypoint-initdb.d/setup.sql
     networks:
       - webnet
     # mysql 8 normally uses default_authentication_plugin=caching_sha2_password
