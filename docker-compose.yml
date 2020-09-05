@@ -7,6 +7,7 @@ services:
     volumes:
       - ./webroot:/webroot
       - ./docker/nginx/site.conf:/etc/nginx/conf.d/site.conf
+      - ./docker/nginx/log:/var/log/nginx
     networks:
       - webnet
     ports:
