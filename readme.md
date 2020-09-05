@@ -37,7 +37,9 @@ To force this, just delete it using
 This project is licensed under the MIT License - see the LICENSE.txt file for details.
 ## Acknowledgments
 * this readme is based on the [PurpleBooth/README-Template][3] by Billie Thompson
+* I am using the [docker-php-extension-installer][4] from Michele Locati
 
 [1]: https://docs.docker.com/get-started/
 [2]: https://docs.docker.com/compose/install/
 [3]: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+[4]: https://github.com/mlocati/docker-php-extension-installer
